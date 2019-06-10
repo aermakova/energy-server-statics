@@ -1,0 +1,1 @@
+import '../../views/blocks/user-panel/user-panel'

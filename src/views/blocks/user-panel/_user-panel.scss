@@ -1,0 +1,71 @@
+.user-panel{
+  max-width: 1004px;
+  margin: 23px auto 0;
+  padding: 50px 104px 60px;
+  &-nav{
+    margin-bottom: 50px;
+  }
+  &-form{
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    label{
+      opacity: .5;
+      transition: $transition2;
+    }
+  }
+}
+.nav-tabs {
+  border-bottom: 1px solid rgba(199,199,199, .5);
+}
+.nav-tabs .user-panel-tab{
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 0 10px 0;
+  margin-left: 50px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: $transition2;
+}
+.nav-tabs .user-panel-tab:focus, .nav-tabs .user-panel-tab:hover{
+  border: 1px solid transparent;
+  border-bottom-color: $blue;
+  transition: $transition2;
+}
+.nav-tabs .user-panel-tab.active{
+  border: 1px solid transparent;
+  border-bottom-color: $blue;
+  color: $blue;
+}
+
+.input-line{
+  height: 50px;
+  line-height: 50px;
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom-color: #808080;
+  transition: $transition2;
+  padding-right: 0;
+  padding-left: 20px;
+  &:focus{
+    outline: none;
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom-color: $blue;
+    transition: $transition2;
+    box-shadow: none;
+    & + label{
+      color: $blue;
+      opacity: 1;
+      transition: $transition2;
+    }
+  }
+}
+.text-muted {
+  font-size: 18px;
+  color: $text-color!important;
+  text-align: left;
+  opacity: 0.5;
+  padding-left: 10px;
+}
