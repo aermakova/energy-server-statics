@@ -1,0 +1,40 @@
+.header{
+  padding: 10px 10px 0 10px;
+  &-wrap{
+    background: #fff;
+  }
+  &__nav{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-content{
+    align-items: center;
+    padding: 5px 0;
+  }
+  &__logo{
+    margin-right: 59px;
+  }
+}
+.logo{
+  &--small{
+    width: 73px;
+  }
+}
+.nav{
+  text-align: right;
+  width: 100%;
+  &-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &-item{
+    &__link{
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.page{
+  &-head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    &__btn{
+    }
+  }
+}
+
+.breadcrumbs{
+  margin-top: 60px;
+  &__item{
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: 60px;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      right: -25px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 10px;
+      height: 10px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD3SURBVHgBlZE9TsNAEIXf2zUNVSpkgUAUpkERcoMUEBJbGhpzA3IDfAM4AtyA3CKl06V0GylSXKRI6TLKjyfr/ClxEkWZanf0zbw3M8AJ4deCWx6FjKnko/MvUiL7TZxDYLUWGK35LWMYC6/zWwr3j+++c4Zw2a1S6hFTpDEveHh6i6gQ2qfZgSgtOMPfJI6zuUIxiGj21oggpZIGJvhP2s20bFWVE9ZkNs2xA65Cu14VnE46hZiFC98uyQ8oRu7Nnbm49nh55WWDfndhabPafwlMLqgTDPcOrfB38A7+c1AX8rO0iPj44exSco0fCl+tnxSnRGF5BnG2QOvDZpZeAAAAAElFTkSuQmCC');
+    }
+    &.current{
+      font-weight: bold;
+      margin-left: 30px;
+      &:after{
+        display: none;
+      }
+    }
+  }
+}

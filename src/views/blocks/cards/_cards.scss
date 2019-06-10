@@ -1,0 +1,55 @@
+.cards{
+  padding: 90px 0 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.card{
+  border-radius: 0;
+  width: 100%;
+  &-col{
+    flex: 0 0 265%;
+    max-width: 265px;
+    padding: 0 15px;
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+    padding: 6px 20px 0 9px;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  &__date{
+    align-self: center;
+    color: $white;
+  }
+  &__bg{
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+    position: relative;
+  }
+  &__img{
+    position: absolute;
+    z-index: 2;
+  }
+  &__details{
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  &__title{
+    font-weight: bold;
+  }
+  &__text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dropdown-menu{
+    z-index: 4;
+  }
+}

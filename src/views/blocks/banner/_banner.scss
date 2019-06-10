@@ -1,0 +1,20 @@
+.banner{
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 300px;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 19px;
+  }
+  &__text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__price{
+    color: $blue;
+    font-size: 16px;
+  }
+}

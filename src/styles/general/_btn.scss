@@ -1,0 +1,198 @@
+.btn{
+  display: inline-block;
+  color: $white;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: bold;
+  align-self: baseline;
+  line-height: 1.5;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  transition: $transition2;
+  &:hover{
+    color: $white;
+    transition: $transition2;
+
+  }
+  &:focus{
+    outline: none;
+  }
+  &-big{
+    font-size: 18px;
+    padding: 12px 25px;
+    min-width: 176px;
+  }
+  &-small{
+    padding: 5px 25px;
+    min-width: 130px;
+  }
+  &-extra-small{
+    padding: 5px 25px;
+    min-width: 100px;
+  }
+  &-empty{
+    color: $text-color;
+    background-color: transparent;
+    border: 1px solid $text-color;
+    opacity: .6;
+    &:hover{
+      border-color: $stroke-blue;
+      color: $stroke-blue;
+    }
+  }
+  &-blue{
+    background-color: $blue;
+    &:hover{
+      background-color: lighten($blue, 5%);
+    }
+  }
+  &-orange{
+    background-color: $orange;
+    &:hover{
+      background-color: lighten($orange, 5%);
+    }
+  }
+  &-red{
+    background-color: $red;
+    &:hover{
+      background-color: lighten($red, 5%);
+    }
+  }
+  &-green{
+    background-color: $green;
+    &:hover{
+      background-color: lighten($green, 5%);
+    }
+  }
+  &-dropdown{
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    position: relative;
+    bottom: -3px;
+    margin-left: 15px;
+    outline: none;
+    cursor: pointer;
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 8px;
+      margin: auto;
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border-bottom: 2px solid $text-color;
+      border-right: 2px solid $text-color;
+      transform: rotate(-135deg);
+    }
+    &:focus{
+      outline: none;
+    }
+    &.collapsed{
+      &:after{
+        top: 8px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  &-icon{
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    position: relative;
+    bottom: -3px;
+    outline: none;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+    }
+    &--excel{
+      background: url("../img/excel-icon.svg") transparent no-repeat center;
+      background-size: 25px;
+    }
+    &--panel{
+      background: url("../img/panel-view-icon.svg") transparent no-repeat center;
+      background-size: 25px;
+    }
+    &--line{
+      background: url("../img/line-view-icon.svg") transparent no-repeat center;
+      background-size: 25px;
+    }
+    &--table{
+      position: relative;
+      bottom: 15px;
+    }
+  }
+}
+
+.see-more{
+  text-align: left;
+  &__inner{
+    display: none;
+  }
+  &__item{
+    background: #fff;
+    border: .5px solid $stroke;
+    transition: .4s ease-in-out;
+    &:hover{
+      background-color: $bg-color-hover;
+      transition: .4s ease-in-out;
+    }
+  }
+  &-btn{
+    width: 40px;
+    height: 33px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &--black{
+      .see-more-btn__circle, &:before, &:after{
+        background: #1A1A1A;
+      }
+    }
+    &--white{
+      .see-more-btn__circle, &:before, &:after{
+        background: $white;
+      }
+    }
+    &:focus{
+      outline: none;
+    }
+    &:before{
+      content:'';
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      display: block;
+    }
+    &__circle{
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 4px;
+    }
+    &:after{
+      content:'';
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      display: block;
+    }
+  }
+}

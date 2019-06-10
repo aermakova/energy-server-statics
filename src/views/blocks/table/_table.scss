@@ -1,0 +1,145 @@
+.table{
+  border-collapse:separate;
+  border-spacing:0 10px;
+  margin-top: 30px;
+  &-collapse{
+    td{
+      border: 1px solid $stroke;
+      background-color: $white;
+    }
+  }
+  &-excel{
+    .table-row{
+      td{
+        &:first-of-type{
+          font-weight: bold;
+        }
+        &:nth-child(4){
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  &-head{
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color;
+    opacity: 0.6;
+    padding: 0;
+    th{
+      &:last-of-type{
+        text-align: left;
+      }
+    }
+  }
+  &-row{
+    padding: 12px 0;
+    vertical-align: middle;
+    background-color: $white;
+    height: 60px;
+    td{
+      border: 1px solid $stroke;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      min-height: 60px;
+      &:last-of-type{
+        display: flex;
+        justify-content: flex-end;
+        border-right: 1px solid transparent;
+        border-left: 1px solid $stroke;
+      }
+      &:first-of-type{
+        border-left: 1px solid transparent;
+        border-right: 1px solid $stroke;
+      }
+    }
+    &--disabled{
+      background-color: $bg-color-hover;
+      opacity: .6;
+      td{
+        &:last-child{
+          button{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &-cards{
+    th, td{
+      &:first-of-type{
+        padding-right: 50px;
+      }
+    }
+    .table-row{
+      td{
+        &:first-of-type{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.picker{
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: -90px;
+  background-color: $white;
+  border: 1px solid $stroke;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1470px){
+    left: auto;
+    right: -90px;
+  }
+  &__item{
+    margin: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: .5px solid $stroke;
+    transition: $transition2;
+    cursor: pointer;
+    &:hover{
+      border: 1px solid $blue;
+      transition: $transition2;
+    }
+    &.active{
+      border: 1px solid $blue;
+    }
+  }
+  &-color{
+    &--1{
+      background-color: $picker-1;
+    }
+    &--2{
+      background-color: $picker-2;
+    }
+    &--3{
+      background-color: $picker-3;
+    }
+    &--4{
+      background-color: $picker-4;
+    }
+    &--5{
+      background-color: $picker-5;
+    }
+    &--6{
+      background-color: $picker-6;
+    }
+    &--7{
+      background-color: $picker-7;
+    }
+    &--8{
+      background-color: $picker-8;
+    }
+    &--9{
+      background-color: $picker-9;
+    }
+  }
+}
