@@ -36,6 +36,17 @@ ul{
       user-select: none;
     }
   }
+  &-content{
+    position: relative;
+    &-middle{
+      max-width: 1004px;
+      margin: 0 auto;
+    }
+    &-small{
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
 }
 .bg-grey{
   background: $bg-color;
