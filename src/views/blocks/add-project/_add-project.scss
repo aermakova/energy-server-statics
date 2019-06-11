@@ -1,0 +1,27 @@
+.add-project{
+  margin-top: 100px;
+  .form-file{
+    height: 100%;
+  }
+  .form-group{
+    padding: 0;
+    &.row{
+      .col-sm-6{
+        padding: 0;
+        &:first-of-type{
+          padding: 0 15px 0 .5rem;
+        }
+        &:last-of-type{
+          padding: 0 .5rem 0 15px;
+        }
+      }
+    }
+    &:first-of-type{
+      padding-top: 27px;
+    }
+  }
+}
+
+.form-group.row{
+  padding-top: 0;
+}

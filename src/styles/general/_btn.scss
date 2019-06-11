@@ -12,6 +12,11 @@
   outline: none;
   cursor: pointer;
   transition: $transition2;
+  &-disabled{
+    background: #808080!important;
+    cursor: default!important;
+    opacity: 1!important;
+  }
   &:hover{
     color: $white;
     transition: $transition2;
@@ -158,6 +163,18 @@
     &-user{
       background: url("../img/user-icon.svg") transparent no-repeat center;
       background-size: 15px;
+    }
+    &-remove{
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      bottom: 0;
+      &-white{
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAc1JREFUeNq0ljFLw0AYhlvbUroVoSBCtSoG9U/oH3ARnOxSF2cndVLwlwi1hEgrxKXp0lSxLaVbWtBJFEeLg+Jg71q/C3chxLtLIvHggZI7nje578ul8Zh8KMA2sAmsATl6/Q14BG4BHXiIhRwLwAUwDcglsBxUvgd8hZAzvoGSn/zwD2IvJyL5bgRyRtErz0UoZ8y7AzTBIkwRSSYU3twNk+d5C5LJJB6NRuNer4cEIVjXdaRpGpKELJGAI95kIpHAg8EATWGYpkkkyC1vNBpjMkfWSALOSEBdsgUY5Lao1WqxJ8GGYdjBnU4HpdNp2RbekYBnn2KREFuoquq4XC47cs9T8XglAZ8BOgJXKhVbTEa1WkU+xWd8zAR9vTHGzm+EUKhz58Xv7qGg9t3XajXSNd6a+G6RIZNDQW1ht9t1itxsNt3dJQu5j9Gz49dkNpvF7XZbVFCn8MPhUNZJ5yRgkTdZKBSIAFmWJeoW1O/3EdQGZTIZUTetsDpc8xYoioJTqdREtoUwL7r7urvQc/9w2OV5H5qo5Puilj2OQH7q916UAhwBIg6CvnyrgBpCfAWs80Rxn6ANYAfYov8aZun1d+AJMGkHWiLBjwADACMuJs1GuRe1AAAAAElFTkSuQmCC') transparent no-repeat center;
+      }
+      &-black{
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjBgwDCAfNaShmAAABY0lEQVQ4y43US04bURAF0GMGMOUXKWAiJQKygAiZgWEFgMkyIgHhk02EwDz8VoA8AQEbwURJJLfdUsIgrIAMEIO2++M2tu/oVum+qrr1nl5BFm+sW/HWKzxouHbhjxdQdKruq7JxMK5sX92J6W7yitC24Vx+2I7QWmd6y63Zl1qbU7OZrX5rVC+MqiVdisIe1ZMuoamInvncVw67jqNF1lNWKxYyogWVmI8IFId8dO5/nLxXVYqjkqr7OHpUtc6NcqbmB4HFFmu0WBtLrvid2090JC9nwk/+dbFX0tRMjdZGwcOQgsJAO4rwxC9juZEaFlNeEkz60c10IzbdeWTZFRv2M3tvZtbazNzLoU/MqBsZ/OLgxM5Ahr/4HpFpobm+8vdCr9vBmlqf5z3mzko6sanWo8u8OxudyVWh3ZT9xOqeMFu9jSnHAt8smQCTlh0IHCWzyz2LoopV71rfTODapb9pwTMFNlXYNhYzfQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNi0xMlQwMTowODowNyswMjowMOgnl0gAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDYtMTJUMDE6MDg6MDcrMDI6MDCZei/0AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==') transparent no-repeat center;
+      }
     }
   }
 }

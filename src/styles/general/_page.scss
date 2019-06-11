@@ -12,7 +12,7 @@ ul{
 }
 .page{
   min-height: 100vh;
-  padding-bottom: 50px;
+  overflow: hidden;
   &-login{
     display: flex;
     justify-content: center;
@@ -50,6 +50,24 @@ ul{
 }
 .bg-grey{
   background: $bg-color;
+  &-full{
+    position: relative;
+    &:before{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform: scaleX(4);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      background: $bg-color;
+      user-select: none;
+      pointer-events: none;
+    }
+  }
 }
 .bg-white{
   background: $white;

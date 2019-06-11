@@ -1,0 +1,23 @@
+.icons-block{
+  padding: 25px 0;
+  margin-top: 60px;
+}
+.icon-block{
+  &__img{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 70px;
+  }
+  &__text{
+    font-size: 22px;
+    line-height: 29px;
+    opacity: 0.7;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    margin-right: 25px;
+    p{
+      display: block;
+    }
+  }
+}
