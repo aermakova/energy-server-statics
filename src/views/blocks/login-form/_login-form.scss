@@ -1,0 +1,12 @@
+.auth-form{
+  width: 796px;
+  background-color: #fff;
+  padding: 38px 103px 70px 103px;
+  position: relative;
+  z-index: 2;
+  &__btn{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+}

@@ -1,0 +1,113 @@
+.price-block{
+  padding: 40px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  &__col{
+    flex: 0 0 320px;
+    max-width: 320px;
+    padding: 0 15px;
+  }
+}
+.price-card{
+  width: 100%;
+  text-align: center;
+  &__head{
+    padding: 20px 10px 30px;
+    color: $white;
+    height: 240px;
+    overflow: hidden;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  &__price{
+    font-weight: bold;
+    font-size: 70px;
+  }
+  &__currency{
+    font-size: 18px;
+  }
+  &__info{
+    min-height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span{
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .btn{
+      margin: auto;
+    }
+  }
+  &__list{
+    padding: 0 20px;
+    margin: 0;
+    background-color: $bg-color-hover;
+    &-item{
+      border-bottom: 1px solid $stroke;
+      padding: 9px 0;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  &__btn{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__input{
+    font-size: 20px;
+    line-height: 53px;
+    width: 70px;
+    height: 53px;
+    margin: 0 10px;
+    padding-right: 12px;
+    border: 1px solid $stroke;
+    outline: none;
+    &:focus{
+      outline: none;
+    }
+  }
+  &--blue{
+    .price-card__head{
+      background-color: $price-card-blue;
+    }
+    .btn-price-card{
+      background-color: $price-card-blue;
+      &:hover{
+        background-color: lighten($price-card-blue, 5%);
+      }
+    }
+  }
+  &--green{
+    .price-card__head{
+      background-color: $price-card-green;
+    }
+    .btn-price-card{
+      background-color: $price-card-green;
+      &:hover{
+        background-color: lighten($price-card-green, 5%);
+      }
+    }
+  }
+  &--orange{
+    .price-card__head{
+      background-color: $price-card-orange;
+    }
+    .btn-price-card{
+      background-color: $price-card-orange;
+      &:hover{
+        background-color: lighten($price-card-orange, 5%);
+      }
+    }
+  }
+}

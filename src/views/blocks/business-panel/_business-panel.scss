@@ -1,0 +1,138 @@
+.business-table{
+  .table-row td:last-of-type{
+    display: table-cell;
+    text-align: left;
+  }
+}
+.form-group-col{
+  flex: 0 0 270px;
+  max-width: 270px;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 0;
+}
+.business-panel{
+  &__bottom{
+    font-size: 14px;
+  }
+  &__bottom-icon{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: default;
+  }
+  &__bottom-item{
+    padding-right: 10px;
+    margin: 5px 0;
+    span{
+      margin: 0 10px 0 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+.tab-pane{
+  &__row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__col{
+    flex: 0 0 270px;
+    max-width: 270px;
+  }
+  &__col-btn{
+    flex: 0 0 180px;
+    max-width: 180px;
+  }
+}
+
+.file-upload {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+  &.show{
+    display: block;
+  }
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px dashed $stroke;
+  position: relative;
+}
+
+.image-dropping, .image-upload-wrap:hover {
+  background-color: $bg-color-hover;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: $text-color;
+}
+
+.drag-text {
+  padding: 50px 30px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .btn{
+    margin: 0 auto 20px auto;
+  }
+  &__format{
+    font-weight: 600;
+    font-size: 16px;
+    color: $stroke;
+    direction: ltr;
+    ins{
+      color: #F04F25;
+      opacity: 0.7;
+      font-style: normal;
+      text-decoration: none;
+    }
+  }
+  &__info {
+    color: #C7C7C7;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 0;
+    span{
+      font-size: 16px;
+      display: block;
+      text-align: center;
+    }
+  }
+  &__size{
+    color: #F04F25;
+    opacity: 0.7;
+  }
+}
+
+.file-upload-image {
+  max-height: 100px;
+  max-width: 100px;
+  margin: auto;
+  padding: 10px;
+}

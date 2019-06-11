@@ -15,10 +15,10 @@
   &:hover{
     color: $white;
     transition: $transition2;
-
   }
   &:focus{
     outline: none;
+    box-shadow: none;
   }
   &-big{
     font-size: 18px;
@@ -33,6 +33,11 @@
     padding: 5px 25px;
     min-width: 100px;
   }
+  &-with-input{
+    font-size: 18px;
+    padding: 12px 25px;
+    min-width: 165px
+  }
   &-empty{
     color: $text-color;
     background-color: transparent;
@@ -41,6 +46,17 @@
     &:hover{
       border-color: $stroke-blue;
       color: $stroke-blue;
+    }
+  }
+  &-empty-white{
+    font-size: 16px;
+    color: $white;
+    background-color: transparent;
+    border: 2px solid $white;
+    min-height: 46px;
+    &:hover{
+      border-color: $white;
+      color: $white;
     }
   }
   &-blue{
@@ -115,7 +131,7 @@
     &:focus{
       outline: none;
     }
-    &--excel{
+    &-excel{
       background: url("../img/excel-icon.svg") transparent no-repeat center;
       background-size: 25px;
     }
@@ -123,13 +139,25 @@
       background: url("../img/panel-view-icon.svg") transparent no-repeat center;
       background-size: 25px;
     }
-    &--line{
+    &-line{
       background: url("../img/line-view-icon.svg") transparent no-repeat center;
       background-size: 25px;
     }
-    &--table{
+    &-table{
       position: relative;
       bottom: 15px;
+    }
+    &-add-file{
+      background: url("../img/add-file-icon.svg") transparent no-repeat center;
+      background-size: 25px;
+    }
+    &-download{
+      background: url("../img/download-icon.svg") transparent no-repeat center;
+      background-size: 18px;
+    }
+    &-user{
+      background: url("../img/user-icon.svg") transparent no-repeat center;
+      background-size: 15px;
     }
   }
 }
@@ -160,12 +188,12 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    &--black{
+    &-black{
       .see-more-btn__circle, &:before, &:after{
         background: #1A1A1A;
       }
     }
-    &--white{
+    &-white{
       .see-more-btn__circle, &:before, &:after{
         background: $white;
       }

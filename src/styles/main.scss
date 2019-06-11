@@ -32,6 +32,19 @@ a{
     text-decoration: none;
   }
 }
+p{
+  margin: 2px 0;
+}
+
+.fz-24{
+  font-size: 24px;
+}
+.fw-bold{
+  font-weight: bold;
+}
+.input-big{
+  width: 270px;
+}
 .table td, .table th {
   padding: 12px 10px;
   vertical-align: middle;
@@ -95,42 +108,9 @@ a{
   }
 }
 
-.form-group {
-  position: relative;
-  padding-top: 27px;
-  label {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+.color-blur{
+  color: $blue;
 }
-
-.input-group{
-  padding-bottom: 31px;
-  .text-muted{
-    position: absolute;
-    padding-top: .25rem;
-    bottom: 0;
-    left: 0;
-  }
-  .input-group-append{
-    position: absolute;
-    left: 0;
-    height: 50px;
-    z-index: 2;
-  }
-  .input-group-text{
-    background: transparent;
-    border: none;
-    border-bottom-color: #808080;
-    outline: none;
-    cursor: pointer;
-    &:focus{
-      outline: none;
-    }
-    &.eye-icon{
-      background: url("../img/eye-icon.svg") transparent no-repeat center;
-      background-size: 25px;
-    }
-  }
+.color-white{
+  color: $white;
 }

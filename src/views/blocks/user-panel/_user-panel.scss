@@ -48,6 +48,12 @@
   transition: $transition2;
   padding-right: 0;
   padding-left: 20px;
+  &--small{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-width: 1px;
+  }
   &:focus{
     outline: none;
     border-color: transparent;
@@ -59,7 +65,77 @@
       color: $blue;
       opacity: 1;
       transition: $transition2;
+      & + .input-group-append{
+        border-bottom-color: $blue;
+        transition: $transition2;
+      }
     }
+  }
+}
+
+.select-line{
+  font-size: 18px;
+  width: 100%;
+  height: 34px;
+  padding: 0 10px;
+  text-align: right;
+  color: $text-color;
+  line-height: 34px;
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom-color: #808080;
+  transition: $transition2;
+  position: relative;
+  &:after {
+    position: absolute;
+    left: 5px;
+    top: 15px;
+  }
+  &:hover{
+    color: $text-color;
+  }
+  &:focus {
+    color: $text-color;
+    outline: none;
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom-color: $blue;
+    transition: $transition2;
+    box-shadow: none;
+  }
+}
+.dropdown-line{
+  font-size: 18px;
+  width: 100%;
+  height: 34px;
+  padding: 0 10px;
+  text-align: right;
+  color: $text-color;
+  line-height: 34px;
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom-color: #808080;
+  transition: $transition2;
+  position: relative;
+  &:after {
+    position: absolute;
+    left: 5px;
+    top: 15px;
+  }
+  &:hover{
+    color: $text-color;
+  }
+  &:focus {
+    color: $text-color;
+    outline: none;
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom-color: $blue;
+    transition: $transition2;
+    box-shadow: none;
+  }
+  &--big{
+    width: 270px;
   }
 }
 .text-muted {
@@ -68,4 +144,46 @@
   text-align: left;
   opacity: 0.5;
   padding-left: 10px;
+}
+
+.form-group {
+  position: relative;
+  padding-top: 27px;
+  label {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.input-group{
+  padding-bottom: 31px;
+  padding-left: 22px;
+  .text-muted{
+    position: absolute;
+    padding-top: .25rem;
+    bottom: 0;
+    left: 0;
+  }
+  .input-group-append{
+    position: absolute;
+    left: 1px;
+    height: 50px;
+    border-bottom: 1px solid #808080;
+    transition: $transition2;
+    z-index: 2;
+  }
+  .input-group-text{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+    }
+    &.eye-icon{
+      background: url("../img/eye-icon.svg") transparent no-repeat center;
+      background-size: 25px;
+    }
+  }
 }
