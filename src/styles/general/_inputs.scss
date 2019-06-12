@@ -73,3 +73,57 @@
 option, select{
   color: $text-color;
 }
+
+.input-group{
+  padding-bottom: 31px;
+  padding-left: 22px;
+  .text-muted{
+    position: absolute;
+    padding-top: .25rem;
+    bottom: 0;
+    left: 0;
+  }
+  .input-group-append{
+    position: absolute;
+    left: 1px;
+    height: 50px;
+    border-bottom: 1px solid #808080;
+    transition: $transition2;
+    z-index: 2;
+  }
+  .input-group-text{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+    }
+    &.eye-icon{
+      background: url("../img/icons/eye-icon.svg") transparent no-repeat center;
+      background-size: 25px;
+    }
+  }
+  .input-group-small{
+    height: 34px;
+  }
+}
+
+.form-group {
+  position: relative;
+  padding-top: 27px;
+  label {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.form-group-checkbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  label{
+    position: static;
+  }
+}
